@@ -12,11 +12,18 @@ function clock() {
     var m = d.getMinutes();
     var h = d.getHours() - 12;
     var checkM = null;
+    var checkH = null;
   
     if (m > 1) {
      checkM = "0";
     }else {
      checkM = null;
+    }
+  
+    if (h > 10) {
+     checkH = "0";
+    }else {
+     checkH = null;
     }
 
 

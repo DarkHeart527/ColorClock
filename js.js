@@ -27,5 +27,5 @@ function clock() {
     }
 
 
-    document.getElementById('colorAllowed').innerHTML = h + ":" + checkM + m + ":" + s + "." + mi;
+    document.getElementById('colorAllowed').innerHTML = checkH + h + ":" + checkM + m + ":" + s + "." + mi;
 }

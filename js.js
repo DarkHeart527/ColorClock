@@ -15,15 +15,15 @@ function clock() {
     var checkH = null;
   
     if (m < 10) {
-     checkM = null;
-    }else {
      checkM = "0";
+    }else {
+     checkM = '';
     }
   
     if (h < 10) {
-     checkH = null;
-    }else {
      checkH = "0";
+    }else {
+     checkH = '';
     }
 
     document.getElementById('colorAllowed').innerHTML = checkH + h + ":" + checkM + m + ":" + s + "." + mi;

@@ -21,9 +21,9 @@ function clock() {
     }
   
     if (h > 10) {
-     checkH = "0";
-    }else {
      checkH = null;
+    }else {
+     checkH = 0;
     }
 
 

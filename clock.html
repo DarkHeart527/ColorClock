@@ -7,7 +7,7 @@
     <script src="https://darkheart527.github.io/ColorClock/js.js" type="text/javascript">
     </script>
   </head>
-  <body id="backGround" onLoad="clock()">
+  <body id="backGround" onLoad="setInterval( function() { clock() })">
     <p id="colorAllowed" class="clock">Loading...</p>
     <textarea id="textColor" placeHolder="Text Color" value=""></textarea>
     <textarea id="backgroundColor" placeHolder="background Color" value=""></textarea>

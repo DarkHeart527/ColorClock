@@ -14,16 +14,16 @@ function clock() {
     var checkM = null;
     var checkH = null;
   
-    if (m > 1) {
-     checkM = "0";
-    }else {
+    if (m < 10) {
      checkM = null;
+    }else {
+     checkM = "0";
     }
   
-    if (h > 10) {
+    if (h < 10) {
      checkH = null;
     }else {
-     checkH = 0;
+     checkH = "0";
     }
 
     document.getElementById('colorAllowed').innerHTML = checkH + h + ":" + checkM + m + ":" + s + "." + mi;

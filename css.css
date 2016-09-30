@@ -1,1 +1,11 @@
+.btn {
+  color: blue;
+  background-color: lightblue;
+  border-color: blue;
+  border-radius: 15px;
+  border-width: 5px;
+}
 
+.clock {
+  font-size: 500px;
+}

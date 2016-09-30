@@ -5,10 +5,20 @@ function submit() {
 }
 
 function clock() {
+  
     var d = new Date();
     var mi = d.getMilliseconds();
     var s = d.getSeconds();
     var m = d.getMinutes();
     var h = d.getHours() - 12;
-    document.getElementById('colorAllowed').innerHTML = h + ":" + m + ":" + s + "." + mi;
+    var checkM = null;
+  
+    if (m > 1) {
+     checkM = "0";
+    }else {
+     checkM = null;
+    }
+
+
+    document.getElementById('colorAllowed').innerHTML = h + ":" + checkM + m + ":" + s + "." + mi;
 }

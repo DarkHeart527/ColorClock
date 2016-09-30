@@ -34,12 +34,12 @@ function clock() {
     }else {
      checkS = '';
     }
-  if (m < 10) {
+  if (mi < 10) {
      checkM = "0";
     }else {
      checkM = '';
     }
-  if (m < 100) {
+  if (mi < 100) {
      checkMM = "0";
     }else {
      checkMM = '';

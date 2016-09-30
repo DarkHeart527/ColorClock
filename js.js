@@ -33,5 +33,5 @@ function clock() {
      checkS = '';
     }
 
-    document.getElementById('colorAllowed').innerHTML = checkH + h + ":" + checkM + m + ":" + s + "." + mi;
+    document.getElementById('colorAllowed').innerHTML = checkH + h + ":" + checkM + m + ":" + checkS + s + "." + mi;
 }

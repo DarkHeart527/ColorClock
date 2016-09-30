@@ -46,4 +46,5 @@ function clock() {
     }
 
     document.getElementById('colorAllowed').innerHTML = checkH + h + ":" + checkM + m + ":" + checkS + s + "." + checkM + checkMM + mi;
+    document.getElementById('colorAllowed2').innerHTML = checkH + h + ":" + checkM + m + ":" + checkS + s + "." + checkM + checkMM + mi + " - Time";
 }

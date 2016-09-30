@@ -13,6 +13,7 @@ function clock() {
     var h = d.getHours() - 12;
     var checkM = null;
     var checkH = null;
+    var checkS = null;
   
     if (m < 10) {
      checkM = "0";
@@ -24,6 +25,12 @@ function clock() {
      checkH = "0";
     }else {
      checkH = '';
+    }
+      
+   if (s < 10) {
+     checkS = "0";
+    }else {
+     checkS = '';
     }
 
     document.getElementById('colorAllowed').innerHTML = checkH + h + ":" + checkM + m + ":" + s + "." + mi;

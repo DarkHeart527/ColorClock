@@ -14,6 +14,8 @@ function clock() {
     var checkM = null;
     var checkH = null;
     var checkS = null;
+    var checkM = null;
+    var checkMM = null;
   
     if (m < 10) {
      checkM = "0";
@@ -32,6 +34,16 @@ function clock() {
     }else {
      checkS = '';
     }
+  if (m < 10) {
+     checkM = "0";
+    }else {
+     checkM = '';
+    }
+  if (m < 100) {
+     checkMM = "0";
+    }else {
+     checkMM = '';
+    }
 
-    document.getElementById('colorAllowed').innerHTML = checkH + h + ":" + checkM + m + ":" + checkS + s + "." + mi;
+    document.getElementById('colorAllowed').innerHTML = checkH + h + ":" + checkM + m + ":" + checkS + s + "." + checkM + checkMM + mi;
 }

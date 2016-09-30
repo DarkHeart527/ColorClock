@@ -26,6 +26,5 @@ function clock() {
      checkH = 0;
     }
 
-
     document.getElementById('colorAllowed').innerHTML = checkH + h + ":" + checkM + m + ":" + s + "." + mi;
 }

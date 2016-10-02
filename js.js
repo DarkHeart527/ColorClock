@@ -10,7 +10,7 @@ function clock() {
     var mi = d.getMilliseconds();
     var s = d.getSeconds();
     var m = d.getMinutes();
-    var h = d.getHours() - 12;
+    var h = d.getHours();
     var checkM = null;
     var checkH = null;
     var checkS = null;

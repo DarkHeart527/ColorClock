@@ -17,29 +17,29 @@ function clock() {
     var checkM = null;
     var checkMM = null;
   
-    if (m < 10) {
+    if (m < 10  & m != 10) {
      checkM = "0";
     }else {
      checkM = '';
     }
   
-    if (h < 10) {
+    if (h < 10 & h != 10) {
      checkH = "0";
     }else {
      checkH = '';
     }
       
-   if (s < 10) {
+   if (s < 10 & s != 10) {
      checkS = "0";
     }else {
      checkS = '';
     }
-  if (mi < 10) {
+  if (mi < 10 & mi != 10) {
      checkM = "0";
     }else {
      checkM = '';
     }
-  if (mi < 100) {
+  if (mi < 100 & mi != 100) {
      checkMM = "0";
     }else {
      checkMM = '';
